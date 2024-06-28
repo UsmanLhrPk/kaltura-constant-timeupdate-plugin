@@ -1,1 +1,1 @@
-export * from './plugin-example-config'
+export * from './constant-timeupdate-plugin-config'

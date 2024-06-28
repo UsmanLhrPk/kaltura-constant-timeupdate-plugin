@@ -3,6 +3,7 @@ import '../../src/index';
 import { setup } from '@playkit-js/kaltura-player-js';
 import { config, targetId } from '../mock/config';
 import { mediaData } from '../mock/media-sourc';
+import { ConstantTimeupdate } from '../../src/constant-timeupdate';
 
 describe('Upper Bar Manager', () => {
   let player;
@@ -29,18 +30,18 @@ describe('Upper Bar Manager', () => {
     player = setup({
       ...config,
       plugins: {
-        pluginExample: {
+        constantTimeupdate: {
           developerName: 'Stiven Hoking'
         }
       }
     });
-    const pluginInstance = player.plugins.pluginExample;
+    const pluginInstance = player.plugins.constantTimeupdate;
 
     // Do
     player.setMedia({ sources: { ...mediaData } });
     await player.ready();
 
     // Expect
-    expect(pluginInstance.config.developerName).equal('Stiven Hoking');
+    expect(pluginInstance.config.roundFn).equal(Math.round);
   });
 });
