@@ -67,11 +67,11 @@ module.exports = (env, { mode }) => {
       extensions: ['.tsx', '.ts', '.js']
     },
     output: {
-      filename: 'playkit-plugin-example.js',
+      filename: 'playkit-constant-timeupdate.js',
       path: path.resolve(__dirname, 'dist'),
       library: {
         umdNamedDefine: true,
-        name: ['KalturaPlayer', 'plugins', 'plugin-example'],
+        name: ['KalturaPlayer', 'plugins', 'constant-timeupdate'],
         type: 'umd'
       },
       clean: true

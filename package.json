@@ -1,8 +1,8 @@
 {
-  "name": "@playkit-js/plugin-example",
+  "name": "@playkit-js/constant-timeupdate-plugin",
   "version": "1.0.0",
   "description": "Pre-configured (live working example) plugin template of kaltura-player-js according to kaltura-player-js specification",
-  "main": "dist/playkit-plugin-example.js",
+  "main": "dist/playkit-constant-timeupdate-plugin.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist/**/*",
@@ -10,14 +10,14 @@
     "translations/**/*"
   ],
   "license": "AGPL-3.0",
-  "homepage": "https://github.com/kaltura/playkit-js-plugin-example",
+  "homepage": "https://github.com/UsmanLhrPk/kaltura-constant-timeupdate-plugin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaltura/playkit-js-plugin-example"
+    "url": "https://github.com/UsmanLhrPk/kaltura-constant-timeupdate-plugin"
   },
   "keywords": [
-    "@playkit-js/plugin-example",
-    "plugin-example",
+    "@playkit-js/constant-timeupdate-plugin",
+    "constant-timeupdate-plugin",
     "kaltura",
     "player"
   ],
